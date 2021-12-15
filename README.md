@@ -36,8 +36,9 @@ sudo yum install mariadb-server -y;
 2.啟用 Mariadb
 sudo systemctl enable mariadb;
 sudo systemctl start mariadb;
-3.設定 Mariadb 資料庫字元
+3.進入 Mariadb 
 sudo mysql -u root -p
+4.設定 Mariadb 資料庫字元
 set character_set_server = 'latin1';
 set character_set_results = 'utf8';
 set character_set_filesystem = 'binary';
@@ -45,11 +46,11 @@ set character_set_database = 'latin1';
 set character_set_connection = 'utf8';
 set character_set_client = 'utf8';
 
-4.創建 Mariadb 資料庫
+5.創建 Mariadb 資料庫
 
 create database moodle;
 
-5.添加 Mariadb 使用者
+6.添加 Mariadb 使用者
 
 CREATE USER 'ksu'@'%' IDENTIFIED BY 'PASSWORD';
 GRANT ALL PRIVILEGES ON . TO 'ksu'@'%' IDENTIFIED BY 'PASSWORD';
