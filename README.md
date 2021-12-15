@@ -55,7 +55,7 @@ create database moodle;
 6.添加 Mariadb 使用者
 
 CREATE USER 'ksu'@'%' IDENTIFIED BY 'PASSWORD';
-GRANT ALL PRIVILEGES ON . TO 'ksu'@'%' IDENTIFIED BY 'PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO 'ksu'@'%' IDENTIFIED BY 'PASSWORD';
 FLUSH PRIVILEGES;
 exit;
 ```
