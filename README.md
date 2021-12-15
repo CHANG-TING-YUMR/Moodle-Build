@@ -1,7 +1,9 @@
 # Moodle-Build
-
-# 更新Rockey-Linux
+# 安裝 Rocky-Linux
 ```
+1.下載 Rocky-Linux
+https://rockylinux.org/download
+2.更新 Rocky-Linux
 sudo yum -y update;
 sudo yum -y install vim;
 sudo yum -y install tmux;
